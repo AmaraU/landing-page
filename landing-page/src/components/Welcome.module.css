@@ -1,0 +1,122 @@
+.welcome {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.words {
+    flex: 1;
+    text-align: left;
+    width: 574px;
+}
+
+.home {
+    font-size: 27px;
+    font-weight: 600;
+    color: #343434;
+}
+
+.heading {
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--color-blue-text);
+}
+
+.description {
+    padding-top: 15px;
+    color: var(--color-grey-text);
+    font-size: 23.42px;
+    font-weight: 400;
+
+}
+
+.buttons {
+    padding-top: 20px;
+}
+
+.buttonOne {
+    background-color: var(--color-button);
+    color: var(--color-white-text);
+    border-radius: 36.65px;
+    padding: 20px 25px;
+    border: none;
+    margin-right: 15px;
+}
+
+.buttonTwo {
+    color: var(--color-button);
+    background-color: var(--color-white-text);
+    border: 2px solid var(--color-button);
+    border-radius: 36.65px;
+    padding: 15px 20px;
+}
+
+.revolve {
+    flex: 1;
+    text-align: right;
+}
+
+
+
+
+
+@media screen and (max-width: 830px) {
+
+    .welcome {
+        display: grid;
+        /* column thingy */
+    }
+    
+}
+
+
+.atom {
+    place-items: center;
+    display: grid;
+}
+
+.circle1 {
+    
+}
+
+.path{
+    position: absolute;
+    padding:50px;
+    width: 250px;
+    height: 250px;
+    border-radius:50%;
+    border: 1px solid var(--color-blue-text);
+}
+  
+.path .ball{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    background: var(--color-light-blue);
+    border-radius:50%;
+    animation: anti-spin 3s infinite linear;
+    color: var(--color-white-text);
+    position:absolute;
+    text-align: center;
+}
+
+
+
+
+
+
+/* 
+
+
+<div className={`${this.state.className} ${this.props.content.divClassName}`}>
+
+<div className={[this.state.className, this.props.content.divClassName].join(" ")}>
+
+
+
+
+*/

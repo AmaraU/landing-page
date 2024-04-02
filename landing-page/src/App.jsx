@@ -1,10 +1,11 @@
 import styles from './App.module.css';
+import { Welcome } from './components/Welcome';
 
 function App() {
 
   return (
     <div className={styles.App}>
-      Hello World!
+      <Welcome />
     </div>
   )
 }
