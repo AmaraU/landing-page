@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Welcome.module.css";
+import { getImageURL } from "../../utils";
 
 export const Welcome = () => {
     return (
@@ -29,24 +30,34 @@ export const Welcome = () => {
                     </div>
 
                     <div className={`${styles.path} ${styles.one}`}>
-                        <div className={`${styles.ball} ${styles.ball1}`}>
-                            <div className={styles}/>
+                        <div className={`${styles.ball} ${styles.ball1} ${styles.animation}`}>
+                            <img src={getImageURL("logos/FE.png")} alt="FE" className={styles.image1} />
                         </div>
                     </div>
                     <div className={`${styles.path} ${styles.two}`}>
-                        <div className={`${styles.ball} ${styles.ball2}`}></div>
+                        <div className={`${styles.ball} ${styles.ball2} ${styles.animation}`}>
+                            <img src={getImageURL("logos/I.S.png")} alt="I.S" className={styles.image2} />
+                        </div>
                     </div> 
                     <div className={`${styles.path} ${styles.three}`}>
-                        <div className={`${styles.ball} ${styles.ball3}`}></div>
+                        <div className={`${styles.ball} ${styles.ball3} ${styles.animation}`}>
+                            <img src={getImageURL("logos/IS.png")} alt="IS" className={styles.image3} />
+                        </div>
                     </div> 
                     <div className={`${styles.path} ${styles.four}`}>
-                        <div className={`${styles.ball} ${styles.ball4}`}></div>
+                        <div className={`${styles.ball} ${styles.ball4} ${styles.animation}`}>
+                            <img src={getImageURL("logos/KP.png")} alt="KP" className={styles.image4} />
+                        </div>
                     </div> 
                     <div className={`${styles.path} ${styles.five}`}>
-                        <div className={`${styles.ball} ${styles.ball5}`}></div>
+                        <div className={`${styles.ball} ${styles.ball5} ${styles.animation}`}>
+                            <img src={getImageURL("logos/Smerp.png")} alt="Smerp" className={styles.image5} />
+                        </div>
                     </div> 
                     <div className={`${styles.path} ${styles.six}`}>
-                        <div className={`${styles.ball} ${styles.ball6}`}></div>
+                        <div className={`${styles.ball} ${styles.ball6} ${styles.animation}`}>
+                            <img src={getImageURL("logos/UCP.png")} alt="UCP" className={styles.image6}/>
+                        </div>
                     </div> 
                 </div>
             </div>

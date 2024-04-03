@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .words {
@@ -24,6 +25,8 @@
     font-size: 72px;
     font-weight: 800;
     color: var(--color-blue-text);
+    font-family: "plus-jakarta-sans";
+    font-family: var(--font-pjs);
 }
 
 .description {
@@ -36,6 +39,7 @@
 
 .buttons {
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .buttonOne {
@@ -55,11 +59,6 @@
     padding: 15px 20px;
 }
 
-.revolve {
-    flex: 1;
-    text-align: right;
-    padding-bottom: 10px;
-}
 
 
 
@@ -72,10 +71,20 @@
         /* column thingy */
     }
     
+    .buttons {
+        padding-bottom: 50px;
+    }
 }
 
 
+.revolve {
+    flex: 1;
+    text-align: right;
+    /* padding-bottom: 10px; */
+}
+
 .atom {
+    height: 100vh;
     place-items: center;
     display: grid;
 }
@@ -114,82 +123,93 @@
     align-items: center;
 }
 
-.path{
-    position: absolute;
-    padding:50px;
-    width: 350px;
-    height: 350px;
-    border-radius:50%;
-    border: 1px solid var(--color-blue-text);
-    /* animation: spin 3s infinite linear; */
+.path {
+    position: relative;
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /* border: 1px solid var(--color-blue-text); */
+    animation: spin 3s infinite linear;
 
 }
   
-.path .ball{
-    display:inline-block;
-    width: 30px;
-    height: 30px;
-    background: var(--color-light-blue);
-    border-radius:50%;
-    /* animation: anti-spin 3s infinite linear; */
+.path .ball {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(231.49deg, #DCF5FF 0%, #9CBFD8 100.03%);
+    border-radius: 50%;
+    animation: anti-spin 3s infinite linear;
     color: var(--color-white-text);
-    position:absolute;
+    position: absolute;
     text-align: center;
+    /* z-index: 2; */
 }
 
+
 @keyframes spin {
-    0%{transform: scaleY(.5) rotate(0deg);}
-    100%{transform: scaleY(.5) rotate(360deg);}
+    0% {transform: scaleY(.5) rotate(0deg);}
+    100% {transform: scaleY(.5) rotate(360deg);}
 }
 
 @keyframes anti-spin {
-    0%{transform:rotate(0deg) scaleY(2) rotate(30deg) scale(1);}
-    100%{transform:rotate(-360deg) scaleY(2) rotate(30deg) scale(1);}
+    0% {transform: rotate(0deg) scaleY(2) rotate(30deg) scale(1);}
+    100% {transform: rotate(-360deg) scaleY(2) rotate(30deg) scale(1);}
 }
+
 
 .one {
-    rotate: 30deg;
+    rotate: 15deg;
+    position: relative;
+    left: -50px; /* Add this line */
 }
-
 .two {
-    rotate: 60deg;
+    rotate: 75deg;
+    transform: rotate(15deg) translateX(-50px);
+
 }
 
 .three {
-    rotate: 90deg;
+    rotate: 135deg;
+    transform: rotate(15deg) translateX(-50px);
+
 }
 
 .four {
-    rotate: 120deg;
+    rotate: 195deg;
 }
 
 .five {
-    rotate: 150deg;
+    rotate: 255deg;
 }
 
 .six {
-    rotate: 180deg;
+    rotate: 315deg;
 }
 
-.path .ball {
-    left:40px;
-    top:40px;
+.image1 {
+    rotate: -40deg;
 }
 
+.image2 {
+    rotate: -110deg;
+}
 
-  
+.image3 {
+    rotate: -170deg;
+}
 
+.image4 {
+    rotate: -230deg;
+}
 
+.image5 {
+    rotate: -290deg;
+}
 
-
-/* 
-
-
-<div className={`${this.state.className} ${this.props.content.divClassName}`}>
-
-<div className={[this.state.className, this.props.content.divClassName].join(" ")}>
-
-
-
-
-*/
+.image6 {
+    rotate: -350deg;
+}
