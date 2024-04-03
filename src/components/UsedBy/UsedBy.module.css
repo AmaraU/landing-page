@@ -1,5 +1,43 @@
-.body {
+.banner {
     height: 163px;
     width: 100%;
     background-color: var(--color-light-blue);
+    padding: 24px 0;
+}
+
+.text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-blue-text);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.list {
+    padding-top: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.banner:hover .listItems {
+    animation-play-state: paused;
+}
+
+.listItems {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.listItems img {
+    height: 32px;
+    margin: 0 40px;
 }

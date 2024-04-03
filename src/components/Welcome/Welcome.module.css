@@ -19,6 +19,7 @@
     font-size: 27px;
     font-weight: 600;
     color: #343434;
+    text-decoration: none;
 }
 
 .heading {
@@ -124,13 +125,13 @@
 }
 
 .path {
-    position: relative;
+    position: absolute;
     padding: 50px;
     width: 500px;
     height: 500px;
     border-radius: 50%;
     /* border: 1px solid var(--color-blue-text); */
-    animation: spin 3s infinite linear;
+    /* animation: spin 3s infinite linear; */
 
 }
   
@@ -142,7 +143,7 @@
     height: 75px;
     background: linear-gradient(231.49deg, #DCF5FF 0%, #9CBFD8 100.03%);
     border-radius: 50%;
-    animation: anti-spin 3s infinite linear;
+    /* animation: anti-spin 3s infinite linear; */
     color: var(--color-white-text);
     position: absolute;
     text-align: center;

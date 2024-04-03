@@ -8,7 +8,6 @@ function App() {
     <div className={styles.App}>
       <Welcome />
       <UsedBy />
-      {/* <Welcome /> */}
     </div>
   )
 }

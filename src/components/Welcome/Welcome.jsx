@@ -6,7 +6,9 @@ export const Welcome = () => {
     return (
         <div className={styles.welcome}>
             <div className={styles.words}>
-                <p className={styles.home}>Home</p>
+                <ul>
+                    <li><a className={styles.home} href="#">Home</a></li>
+                </ul>
                 <h1 className={styles.heading}>Ecosystem Of Solutions That Work.</h1>
                 <p className={styles.description}>Empowering Your Business Growth With User-Centric Solutions that make life and business easy.</p>
                 
@@ -36,7 +38,7 @@ export const Welcome = () => {
                     </div>
                     <div className={`${styles.path} ${styles.two}`}>
                         <div className={`${styles.ball} ${styles.ball2} ${styles.animation}`}>
-                            <img src={getImageURL("logos/I.S.png")} alt="I.S" className={styles.image2} />
+                            <img src={getImageURL("logos/Smerp.png")} alt="Smerp" className={styles.image2} />
                         </div>
                     </div> 
                     <div className={`${styles.path} ${styles.three}`}>
@@ -51,7 +53,7 @@ export const Welcome = () => {
                     </div> 
                     <div className={`${styles.path} ${styles.five}`}>
                         <div className={`${styles.ball} ${styles.ball5} ${styles.animation}`}>
-                            <img src={getImageURL("logos/Smerp.png")} alt="Smerp" className={styles.image5} />
+                            <img src={getImageURL("logos/I.S.png")} alt="I.S" className={styles.image5} />
                         </div>
                     </div> 
                     <div className={`${styles.path} ${styles.six}`}>
@@ -61,7 +63,6 @@ export const Welcome = () => {
                     </div> 
                 </div>
             </div>
-
         </div>
     )
 }

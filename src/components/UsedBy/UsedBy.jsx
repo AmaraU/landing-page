@@ -5,38 +5,36 @@ import { getImageURL } from "../../utils";
 
 export const UsedBy = () => {
     return (
-        <div className={styles.body}>
+        <div className={styles.banner}>
 
-            <ul>
-                <li>
-                    <img src={getImageURL("usedby/AB.png")} alt="" />
-                </li>
+            <div className={styles.body}>
 
-                <li>
-                    <img src={getImageURL("usedby/Bankly.png")} alt="" />
-                </li>
+                <p className={styles.text}>We are currently used and trusted by</p>
+                
+                <div className={styles.list}>
 
-                <li>
-                    <img src={getImageURL("usedby/FB.png")} alt="" />
-                </li>
+                    <div className={styles.listItems}>
+                        <img src={getImageURL("usedby/AB.png")} alt="" />
+                        <img src={getImageURL("usedby/Bankly.png")} alt="" />
+                        <img src={getImageURL("usedby/FB.png")} alt="" />
+                        <img src={getImageURL("usedby/Itex.png")} alt="" />
+                        <img src={getImageURL("usedby/SB.png")} alt="" />
+                        <img src={getImageURL("usedby/WB.png")} alt="" />
+                        <img src={getImageURL("usedby/TB.png")} alt="" />
+                    </div>
+                    
+                    <div className={styles.listItems}>
+                        <img src={getImageURL("usedby/AB.png")} alt="" />
+                        <img src={getImageURL("usedby/Bankly.png")} alt="" />
+                        <img src={getImageURL("usedby/FB.png")} alt="" />
+                        <img src={getImageURL("usedby/Itex.png")} alt="" />
+                        <img src={getImageURL("usedby/SB.png")} alt="" />
+                        <img src={getImageURL("usedby/WB.png")} alt="" />
+                        <img src={getImageURL("usedby/TB.png")} alt="" />
+                    </div>
 
-                <li>
-                    <img src={getImageURL("usedby/Itex.png")} alt="" />
-                </li>
-
-                <li>
-                    <img src={getImageURL("usedby/SB.png")} alt="" />
-                </li>
-
-                <li>
-                    <img src={getImageURL("usedby/WB.png")} alt="" />
-                </li>
-
-                <li>
-                    <img src={getImageURL("usedby/TB.png")} alt="" />
-                </li>
-            </ul>
-
+                </div>
+            </div>
         </div>
     )
 }
