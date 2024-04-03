@@ -17,12 +17,17 @@ export const Welcome = () => {
 
             <div className={styles.revolve}>
                 <div className={styles.atom}>
+
                     <div className={styles.logo}>
-                        <div className={styles.circle1}></div>
-                        <div className={styles.circle2}></div>
-                        <div className={styles.circle3}></div>
-                        <img className={styles.logo} src="/tfl-logo.png" alt="logo" />
+                        <div className={styles.circle1}>
+                            <div className={styles.circle2}>
+                                <div className={styles.circle3}>
+                                    <img className={styles.logo} src="/tfl-logo.png" alt="logo" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div className={`${styles.path} ${styles.one}`}>
                         <div className={`${styles.ball} ${styles.ball1}`}>
                             <div className={styles}/>

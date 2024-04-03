@@ -1,5 +1,5 @@
 import styles from './App.module.css';
-import { Welcome } from './components/Welcome';
+import { Welcome } from './components/Welcome/Welcome';
 
 function App() {
 
