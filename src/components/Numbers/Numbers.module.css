@@ -1,0 +1,162 @@
+.banner {
+    height: 400px;
+    padding: 54px 10px;
+    background-color: #03045E;
+    color: var(--color-white-text);
+}
+
+.listItems {
+    display: flex;
+    list-style: none;
+}
+
+.numbers {
+    padding-top: 30px;
+}
+
+.text,
+h2 {
+    text-align: center;
+}
+
+
+
+
+
+/* 
+.each {
+    /* position: relative; *
+    justify-content: space-between;
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px;
+    background: #00B4D8;
+}
+
+
+.accordion {
+    margin: 60px auto;
+    width: 600px;
+    gap: 10px;
+
+}
+
+.accordion li {
+    position: relative;
+    padding: 24px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 0.5px solid;
+    border-image-source: linear-gradient(220.16deg, #A19DF1 0.48%, #5F57FF 92.85%);
+    /* background: #EBF5FF; */
+    /* background: #FFFFFF; *
+
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    /* padding: 10px;
+    border-radius: 8px; */
+    /* background: var(--color-grey-text); */
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7); *
+    
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; *
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+
+
+    padding: 20px;
+    gap: 10px;
+    border-radius: 12px 0px 0px 0px;
+    opacity: 0px;
+    background: #FFFFFF;
+
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion input[type="radio"]:checked + .each {
+    background-color: #00B4D8;
+}
+
+.accordion .content {
+    color: #818898;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+/* .accordion input[type="radio"]:checked ~ .each {
+    background: #00B4D8;
+} */
+
+/* .accordion input[type="radio"]:checked ~ .each .icon {
+    background: #00B4D8;
+} */
+
+/* .accordion input[type="radio"]:checked + label::before {
+    content: '-';
+} */
+
+/* input[type="radio"]:checked + li {
+    background: #00B4D8;
+}
+
+input[type="radio"]:checked + li + .content {
+    max-height: 400px;
+    padding: 10px;
+} *
+
+input[type="radio"]:checked + .each + .content {
+    max-height: 400px;
+    padding: 10px;
+}
+
+input[type="radio"]:checked + label::before {
+    content: '-';
+} */

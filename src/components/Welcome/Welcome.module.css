@@ -1,7 +1,7 @@
 .welcome {
-    padding-top: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
+    /* padding-top: 15px; */
+    padding-left: 90px;
+    padding-right: 90px;
 
     display: flex;
     justify-content: space-between;
@@ -16,18 +16,27 @@
 }
 
 .home {
-    font-size: 27px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     color: #343434;
     text-decoration: none;
 }
 
+.bread {
+    position: static;
+    padding-top: 20px;
+    padding-left: 90px;
+
+}
+
+.crumb {
+    list-style: none;
+}
+
 .heading {
-    font-size: 72px;
-    font-weight: 800;
+    font-size: 70px;
+    font-weight: 750;
     color: var(--color-blue-text);
-    font-family: "plus-jakarta-sans";
-    font-family: var(--font-pjs);
 }
 
 .description {
@@ -69,7 +78,7 @@
 
     .welcome {
         display: grid;
-        /* column thingy */
+        flex-direction: column;
     }
     
     .buttons {
@@ -82,10 +91,12 @@
     flex: 1;
     text-align: right;
     /* padding-bottom: 10px; */
+    padding-top: 175px;
+    padding-bottom: 175px;
 }
 
 .atom {
-    height: 100vh;
+    /* height: 650px; */
     place-items: center;
     display: grid;
 }
@@ -127,8 +138,8 @@
 .path {
     position: absolute;
     padding: 50px;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     /* border: 1px solid var(--color-blue-text); */
     /* animation: spin 3s infinite linear; */
@@ -163,54 +174,50 @@
 
 
 .one {
-    rotate: 15deg;
-    position: relative;
-    left: -50px; /* Add this line */
+    rotate: 30deg;
 }
 .two {
-    rotate: 75deg;
-    transform: rotate(15deg) translateX(-50px);
-
+    rotate: 90deg;
 }
 
 .three {
-    rotate: 135deg;
-    transform: rotate(15deg) translateX(-50px);
-
+    rotate: 150deg;
 }
 
 .four {
-    rotate: 195deg;
+    rotate: 210deg;
 }
 
 .five {
-    rotate: 255deg;
+    rotate: 270deg;
 }
 
 .six {
-    rotate: 315deg;
+    rotate: 330deg;
 }
 
+
+
 .image1 {
-    rotate: -40deg;
+    rotate: -30deg;
 }
 
 .image2 {
-    rotate: -110deg;
+    rotate: -90deg;
 }
 
 .image3 {
-    rotate: -170deg;
+    rotate: -150deg;
 }
 
 .image4 {
-    rotate: -230deg;
+    rotate: -210deg;
 }
 
 .image5 {
-    rotate: -290deg;
+    rotate: -270deg;
 }
 
 .image6 {
-    rotate: -350deg;
+    rotate: -330deg;
 }

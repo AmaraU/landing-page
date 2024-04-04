@@ -1,0 +1,82 @@
+@import "../../vars.css";
+
+.footer{
+    width: 100%;
+    height: 443px;
+    padding:54px, 10px,54px,10px;
+    background-color:#03045E;
+}
+
+.title{
+   width: 829px;
+   Height:144px;
+   Gap:16px;
+   text-align: center;
+   justify:center;
+   color: #fff;
+   padding-left: 18%;
+   margin-left: 15%;
+   margin-top:15% ;
+}
+
+.header{
+    width:1005px;
+    height:178px ;
+    border:0px,2px,0px,0px;
+    justify:center;
+    padding:10px;
+    color:#fff;
+    text-align: center;
+    position: absolute;
+    display:flex;
+    flex:10;
+    margin-left: 15%;
+
+    gap: 35px;
+
+
+}
+
+.contents {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left: 15%;
+    color:#fff 10%;
+    justify:center
+}
+
+.item p {
+    font-size: 24px;
+    font-weight: 200;
+    color:#fff 60%;
+    letter-spacing: -2%;
+    line-height: 37.2px;
+}
+
+.title p {
+    font-size: small;
+    margin-top: 5%;
+    padding-bottom:10% ;
+
+}
+
+.title h1{
+    margin-bottom: 5%;
+    
+}
+
+.contents h2{
+   font-size: x-large; 
+    weight: 700px;
+    line-height: 40px;
+    list-style:inside ;
+    
+}
+
+.line {
+    width: 1px;
+    height: 90px;
+    border: 1px solid white;
+}
