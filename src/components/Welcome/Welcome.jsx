@@ -57,7 +57,7 @@ export const Welcome = () => {
                         </div> 
                         <div className={`${styles.path} ${styles.five}`}>
                             <div className={`${styles.ball} ${styles.ball5} ${styles.animation}`}>
-                                <img src={getImageURL("logos/F.E.png")} alt="F.E" className={styles.image5} />
+                                <img src={getImageURL("logos/FE.png")} alt="FE" className={styles.image5} />
                             </div>
                         </div> 
                         <div className={`${styles.path} ${styles.six}`}>

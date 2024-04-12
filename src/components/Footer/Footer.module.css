@@ -8,7 +8,8 @@
 }
 
 .title{
-   width: 829px;
+   /* width: 829px; */
+   /* width: 100%; */
    Height:144px;
    Gap:16px;
    text-align: center;

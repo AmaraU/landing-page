@@ -1,3 +1,18 @@
+@media screen and (max-width: 830px) {
+    .body {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .partOne {
+        margin-bottom: 0;
+    }
+    
+}
+
 
 .heading h2 {
     font-size: 48px;
@@ -34,6 +49,19 @@
 .partOne {
     flex: 1;
     text-align: left;
+
+    min-width: 572px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 616px;
+
+    white-space: nowrap;
+    /* transition: ease 1000ms; */
 }
 
 .partTwo {
@@ -42,8 +70,15 @@
 }
 
 .image {
-    width: 572px;
-    height: 616px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+    display: inline-block;
+}
+
+.image.active {
+    opacity: 1;
 }
 
 
@@ -55,7 +90,7 @@
     opacity: 0.5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 15px;
     border-radius: 12px;
     width: 580px;
@@ -85,7 +120,6 @@
 }
 
 .accordion li {
-    /* position: relative; */
     list-style: none;
     width: 100%;
     margin: 10px;
@@ -123,12 +157,11 @@ label {
     font-size: 18px;
     font-weight: 400;
     text-align: left;
-    /* padding: 0 20px; */
     margin-left: 5px;
     line-height: 28px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.7s, padding 0.7s;
+    transition: max-height 0.5s;
     background-color: #FFFFFF;
 }
 
@@ -136,11 +169,31 @@ input[type="radio"] {
     display: none;
 }
 
+
+input[type="radio"]:hover ~ .each {
+    background-color: #EBF5FF;
+    opacity: 1;
+    border: 0.7px solid #5F57FF;
+    /* border: linear-gradient(231.49deg, #DCF5FF 0%, #9CBFD8 100.03%); */
+}
+
+input[type="radio"]:hover ~ .each label {
+    background-color: #EBF5FF;
+    opacity: 1;
+}
+
+input[type="radio"]:hover ~ .each .content {
+    background-color: #EBF5FF;
+    max-height: 400px;
+    padding: 10px;
+    opacity: 1;
+}
+
+
 input[type="radio"]:checked ~ .each {
     background-color: #EBF5FF;
     opacity: 1;
-    border: 0.5px solid #5F57FF;
-    /* border: linear-gradient(231.49deg, #DCF5FF 0%, #9CBFD8 100.03%); */
+    border: 0.7px solid #5F57FF;
 
 }
 

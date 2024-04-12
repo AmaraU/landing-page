@@ -79,6 +79,7 @@
     .welcome {
         display: grid;
         flex-direction: column;
+        padding-top: 15px;
     }
     
     .buttons {

@@ -21,47 +21,129 @@
 }
 
 .products {
-    height: 150px;
+    height: 109px;
     width: 100%;
-    white-space: nowrap;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     gap: 30px;
-    display: inline-block;
-    overflow: hidden;
-
-}
-
-.product img {
-    /* height: 32px;
-    width: 32px; */
-    padding-top: 10px;
-    padding-bottom: 15px;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .product {
     width: 146px;
     height: 109px;
     border-radius: 12.4px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
 
-}
-
-.unselected {
     background-color: #F6F6F6;
+    border: none;
+
 }
 
-.unselected p {
+.product img {
+    position: absolute;
+    height: 40px;
+    padding-bottom: 15px;
+}
+
+.product img.onHover {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.product.selected img.noHover {
+    opacity: 0;
+}
+.product.selected img.onHover {
+    opacity: 1;
+}
+
+.product p {
+    padding-top: 35px;
+    position: absolute;
     color: #9EAFBB;
+
 }
 
-.selected {
+.product.selected {
     background-color: #DEE9FE;
 }
 
-.selected p {
+.product.selected p{
     color: #1656CC;
 }
+
+
+
+
+
+.moreInfo {
+    background-color: #F4F4F4;
+    width: 1200px;
+    height: 553px;
+    padding: 32px;
+    /* margin-left: 120px;
+    margin-right: 120px; */
+    margin: auto;
+    margin-top: 64px;
+    /* margin-bottom: 50px; */
+    border-radius: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 30px; */
+
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.text h3 {
+    /* margin-top: 48.5px; */
+    margin-bottom: 20px;
+    color: #0E0E0E;
+    font-size: 32px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.text p {
+    width: 446px;
+    text-align: justify;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #828282;
+}
+
+.pic {
+    flex: 1;
+    text-align: right;
+}
+
+.button {
+    width: 196px;
+    height: 59px;
+    border-radius: 36.65px;
+    padding: 20px 25px;
+
+    margin-top: 32px;
+    background-color: #0E0E0E;
+    color: var(--color-white-text);
+    border: none;
+    /* margin-right: 15px; */
+}
+
+

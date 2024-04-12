@@ -8,6 +8,7 @@ import { Welcome } from './components/Welcome/Welcome';
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar/Navbar";
+import { Insights } from './components/Insights/Insights';
 
 function App() {
 
@@ -19,9 +20,9 @@ function App() {
       <UsedBy />
       <Page2 />
       <Footer/>
-
       {/* <Blank /> */}
-      {/* <Solutions /> */}
+      <Solutions />
+      <Insights />
     </div>
   )
 }
