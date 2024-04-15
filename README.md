@@ -1,5 +1,10 @@
 # React + Vite Landing Page
 
+DEPLOYED AT:
+
+fifthlab-lp.vercel.app
+
+
 TO RUN LOCALLY:
 
 -- would need node and react downloaded
