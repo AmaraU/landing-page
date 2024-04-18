@@ -9,6 +9,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Insights } from './components/Insights/Insights';
+import { BottomFooter } from './components/BottomFooter/BottomFooter';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       {/* <Blank /> */}
       <Solutions />
       <Insights />
+      {/* <BottomFooter /> */}
     </div>
   )
 }

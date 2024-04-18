@@ -19,6 +19,7 @@
     font-weight: 700;
     line-height: 72px;
     color: var(--color-blue-text);
+    text-align: center;
 }
 
 .heading {
@@ -87,7 +88,7 @@
 .each {
     position: relative;
     background-color: #FFFFFF;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -95,10 +96,10 @@
     border-radius: 12px;
     width: 580px;
 
-    border: 0.5px solid gray;
+    /* border: 0.5px solid gray; */
 
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
 }
 
 .icon {
@@ -110,6 +111,7 @@
     display: inline-flex;
     flex: 20%;
     text-align: left;
+    opacity: 0.5;
 }
 
 
@@ -129,14 +131,13 @@
 .accordion li label {
     display: flex;
     align-items: center;
+    text-align: left;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 36px;
     cursor: pointer;
 
     background: #FFFFFF;
-    color: var(--color-blue-text);
-
 }
 
 
@@ -147,7 +148,9 @@ label {
     cursor: pointer;
     padding: 0 15px;
     background: #FFFFFF;
-    opacity: 0.5;
+    color: #AEAEAE;
+
+    /* opacity: 0.5; */
 }
 
 .accordion .content {
@@ -165,6 +168,7 @@ label {
     background-color: #FFFFFF;
 }
 
+
 input[type="radio"] {
     display: none;
 }
@@ -172,39 +176,46 @@ input[type="radio"] {
 
 input[type="radio"]:hover ~ .each {
     background-color: #EBF5FF;
-    opacity: 1;
     border: 0.7px solid #5F57FF;
     /* border: linear-gradient(231.49deg, #DCF5FF 0%, #9CBFD8 100.03%); */
 }
 
+input[type="radio"]:checked ~ .each {
+    background-color: #EBF5FF;
+    border: 0.7px solid #5F57FF;
+}
+
+
 input[type="radio"]:hover ~ .each label {
     background-color: #EBF5FF;
-    opacity: 1;
+    color: #03045E;
+    font-weight: 600;
 }
+
+input[type="radio"]:checked ~ .each label {
+    background-color: #EBF5FF;
+    color: #03045E;
+    font-weight: 600;
+}
+
 
 input[type="radio"]:hover ~ .each .content {
     background-color: #EBF5FF;
     max-height: 400px;
     padding: 10px;
-    opacity: 1;
-}
-
-
-input[type="radio"]:checked ~ .each {
-    background-color: #EBF5FF;
-    opacity: 1;
-    border: 0.7px solid #5F57FF;
-
-}
-
-input[type="radio"]:checked ~ .each label {
-    background-color: #EBF5FF;
-    opacity: 1;
 }
 
 input[type="radio"]:checked ~ .each .content {
     background-color: #EBF5FF;
     max-height: 400px;
     padding: 10px;
+}
+
+
+input[type="radio"]:hover ~ .each .icon {
+    opacity: 1;
+}
+
+input[type="radio"]:checked ~ .each .icon {
     opacity: 1;
 }

@@ -3,6 +3,7 @@
     font-weight: 700;
     line-height: 72px;
     color: var(--color-blue-text);
+    text-align: center;
 }
 
 .heading {
@@ -77,6 +78,10 @@
     background-color: #DEE9FE;
 }
 
+.product.selected #KuleanPay {
+    background-color: #EEEEFC;
+}
+
 .product.selected p{
     color: #1656CC;
 }
@@ -90,11 +95,8 @@
     width: 1200px;
     height: 553px;
     padding: 32px;
-    /* margin-left: 120px;
-    margin-right: 120px; */
     margin: auto;
     margin-top: 64px;
-    /* margin-bottom: 50px; */
     border-radius: 24px;
 
     display: flex;
@@ -110,7 +112,6 @@
 }
 
 .text h3 {
-    /* margin-top: 48.5px; */
     margin-bottom: 20px;
     color: #0E0E0E;
     font-size: 32px;
@@ -131,6 +132,8 @@
 .pic {
     flex: 1;
     text-align: right;
+    height: 489px;
+    width: auto;
 }
 
 .button {
@@ -143,7 +146,6 @@
     background-color: #0E0E0E;
     color: var(--color-white-text);
     border: none;
-    /* margin-right: 15px; */
 }
 
 

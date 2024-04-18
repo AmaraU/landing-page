@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Welcome.module.css";
 import { getImageURL } from "../../utils";
 
 export const Welcome = () => {
+    const { behind, setBehind } = useState(false);
+
+    useEffect(() => {
+        const balls = document.querySelectorAll('.ball');
+
+        balls.forEach(ball => {
+            const number = Math.random();
+            if (number < 0.5) {
+                ball.style.zIndex = -5;
+            }
+        });
+    }, []);
+
     return (
         <div>
             <div className={styles.bread}>
@@ -33,10 +46,35 @@ export const Welcome = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            {/* <div className={styles.balls}>
+                                <div className={`${styles.ball} ${styles.ball1} ${styles.animation}`}>
+                                    <img src={getImageURL("logos/MP.png")} alt="MP" className={styles.image1} />
+                                </div>
+                                <div className={`${styles.ball} ${styles.ball2} ${styles.animation}`}>
+                                    <img src={getImageURL("logos/SG.png")} alt="SG" className={styles.image2} />
+                                </div>
+                                <div className={`${styles.ball} ${styles.ball3} ${styles.animation}`}>
+                                    <img src={getImageURL("logos/FE.png")} alt="FE" className={styles.image3} />
+                                </div>
+                                <div className={`${styles.ball} ${styles.ball4} ${styles.animation}`}>
+                                    <img src={getImageURL("logos/KP.png")} alt="KP" className={styles.image4} />
+                                </div>
+                                <div className={`${styles.ball} ${styles.ball5} ${styles.animation}`}>
+                                    <img src={getImageURL("logos/FE.png")} alt="FE" className={styles.image5} />
+                                </div>
+                                <div className={`${styles.ball} ${styles.ball6} ${styles.animation}`}>
+                                    <img src={getImageURL("logos/UCP.png")} alt="UCP" className={styles.image6}/>
+                                </div>
+
+                            </div> */}
+
                         </div>
 
+
                         <div className={`${styles.path} ${styles.one}`}>
-                            <div className={`${styles.ball} ${styles.ball1} ${styles.animation}`}>
+                            <div className={`${styles.ball} ${styles.ball1} ${styles.animation}`}
+                                >
                                 <img src={getImageURL("logos/MP.png")} alt="MP" className={styles.image1} />
                             </div>
                         </div>

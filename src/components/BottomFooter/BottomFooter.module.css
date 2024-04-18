@@ -1,0 +1,108 @@
+.whole {
+    height: 541px;
+    width: 100%;
+    background-color: #121212;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.theTop {
+    flex: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partOne {
+    /* flex: 1; */
+    text-align: left;
+    width: 310px;
+}
+
+.partOne p {
+    color: #6F6C90;
+}
+
+a {
+    color: #6F6C90;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.partTwo {
+    flex: 1;
+    text-align: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partTwo p {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.product{
+    width: 89px;
+}
+.company {
+    width: 94px;
+}
+.support {
+    width: 127px;
+}
+.contact {
+    width: 226px;
+}
+
+.product,
+.company,
+.support,
+.contact {
+    margin-left: 25px;
+}
+
+.theBottom {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.theBottom p {
+    color: #6F6C90;
+}
+
+.theBottom a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.theLeft {
+    flex: 1;
+    text-align: left;
+
+}
+
+.theRight {
+    flex: 1;
+    text-align: right;
+}
+
+
+
+.line {
+
+}
